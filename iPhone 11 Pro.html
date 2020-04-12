@@ -14,14 +14,6 @@
       text-align: center;
     }
 
-    hr {
-      border-color: grey;
-    }
-
-    body {
-      color: #fffcfc;
-    }
-
     .ex1 {
       text-align: center;
       font-size: 35pt;
@@ -49,26 +41,43 @@
       width: 45%;
       margin: auto;
       text-align: left;
+    }
 
       header {
         padding: 30px;
+        font-size: 30pt;
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: Roboto;
+        src: url("Fonts/Roboto Round Regular.ttf");
+      }
+
+      body {
+        font-family: Roboto;
+        color: #fffcfc;
+      }
+
+      .harlow {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 50pt;
       }
   </style>
 </head>
 
-<body bgcolor="black" style="font-family:courier;">
+<body bgcolor="black">
 
-  <header align="center" style="font-size:30pt;font-weight:bold;">
+  <header align="center">
     iPhone 11 Pro
   </header>
-
-  <hr />
 
   <div class="img-container">
     <img src="ProjectFile/iPhone 11 Pro.png" />
   </div>
 
-  <div align="center" style="font-size:50pt">
+  <div align="center" class="harlow">
     And then there was Pro.
   </div>
 
