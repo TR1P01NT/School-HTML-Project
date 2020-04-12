@@ -21,37 +21,46 @@
       font-size: 20pt;
     }
 
-    table{
-      width:80%;
+    table {
+      width: 80%;
       font-size: 20px;
-      text-align:center;
+      text-align: center;
       margin: auto;
     }
 
-    th{
-      width:40%;
+    th {
+      width: 40%;
       font-size: 30px;
     }
 
-    hr {
-      border-width: 1px;
-      border-style: solid;
-      border-color: black;
+    header {
+      padding: 30px;
+      font-size: 30pt;
+      font-weight: bold;
     }
 
-    header{
-      padding: 30px;
+    @font-face {
+      font-family: Roboto;
+      src: url("Fonts/Roboto Round Regular.ttf");
+    }
+
+    body {
+      font-family: Roboto;
+    }
+
+    .harlow {
+      font-family: Roboto;
+      font-weight: bold;
+      font-size:45pt;
     }
   </style>
 </head>
 
-<body bgcolor="#ffffff" style="font-family:courier;">
+<body bgcolor="#ffffff" link="black" alink="#0f0e17" vlink="#ff6e6c">
 
-  <header align="center" style="font-size:30pt;font-weight:bold;">
+  <header align="center">
     iPad
   </header>
-
-  <hr />
 
   <div>
     <p class="img-container">
@@ -59,7 +68,7 @@
     </p>
   </div>
 
-  <div align="center" style="font-size:45pt;font-weight:bold;">
+  <div align="center" class="harlow">
     Like a computer. Unlike any computer.
   </div>
 
@@ -170,9 +179,9 @@
     </p>
   </div>
 
-<br />
-<br />
-<br />
+  <br />
+  <br />
+  <br />
 
   <div>
     <table>
@@ -191,10 +200,16 @@
   <br />
   <br />
 
-  <hr />
+  <nav>
+    <ul style="list-style-type:none;">
+      <li>
+        <a href="iPhone 11 Pro.html">iPhone 11 Pro</a>
+      </li>
+    </ul>
+  </nav>
 
   <p align="center">
-    <a href="index.html">
+    <a href="index.html" style="font-size:20pt">
       HOME
     </a>
   </p>

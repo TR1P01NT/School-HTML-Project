@@ -9,12 +9,6 @@
       text-align: center;
     }
 
-    hr {
-      border-width: 1px;
-      border-style: solid;
-      border-color: black;
-    }
-
     .ex2 {
       width: 75%;
       text-align: center;
@@ -72,19 +66,34 @@
       margin: auto;
     }
 
-    header{
+    header {
       padding: 30px;
+      font-size: 30pt;
+      font-weight: bold;
+    }
+
+    @font-face {
+      font-family: Roboto;
+      src: url("Fonts/Roboto Round Regular.ttf");
+    }
+
+    body {
+      font-family: Roboto;
+    }
+
+    .harlow {
+      font-family: Roboto;
+      font-weight: bold;
+      font-size: 45pt;
     }
   </style>
 </head>
 
-<body bgcolor="#fafafa" link="black" alink="gray" vlink="blue" style="font-family:courier;">
+<body bgcolor="#fafafa" link="black" alink="#0f0e17" vlink="#ff6e6c">
 
-  <header align="center" style="font-size:30pt;font-weight:bold;">
+  <header align="center">
     iPhone 11
   </header>
-
-  <hr />
 
   <div>
     <p class="img-container">
@@ -92,7 +101,7 @@
     </p>
   </div>
 
-  <div align="center" style="font-size:45pt;font-weight:bold;">
+  <div align="center" class="harlow">
     Just the right amount<br />
     of everything.
   </div>
@@ -239,7 +248,9 @@
     <table width="85%" align="center">
       <tr>
         <th class="ex6">Face ID is easier and more secure than Touch ID.</th>
-        <th class="ex6"><p align="center">iPhone 11 privacy.</p></th>
+        <th class="ex6">
+          <p align="center">iPhone 11 privacy.</p>
+        </th>
       </tr>
       <tr>
         <td>
@@ -277,10 +288,8 @@
   <br />
   <br />
 
-  <hr />
-
   <nav>
-    <ul>
+    <ul style="list-style-type:none;">
       <li>
         <a href="iPhone 11 Pro.html">iPhone 11 Pro</a>
       </li>
@@ -288,7 +297,7 @@
   </nav>
 
   <p align="center">
-    <a href="index.html">
+    <a href="index.html" style="font-size:20pt">
       HOME
     </a>
   </p>

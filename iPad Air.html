@@ -9,14 +9,10 @@
       text-align: center;
     }
 
-    hr {
-      border-width: 1px;
-      border-style: solid;
-      border-color: black;
-    }
-
     header {
       padding: 30px;
+      font-size:30pt;
+      font-weight:bold;
     }
 
     .ex1 {
@@ -40,16 +36,29 @@
       margin: auto;
       font-size: 20pt;
     }
+
+    @font-face {
+      font-family: Roboto;
+      src: url("Fonts/Roboto Round Regular.ttf");
+    }
+
+    body {
+      font-family: Roboto;
+    }
+
+    .harlow {
+      font-family: Roboto;
+      font-weight: bold;
+      font-size:45pt;
+    }
   </style>
 </head>
 
-<body bgcolor="#ffffff" style="font-family:courier;">
+<body bgcolor="#ffffff" link="black" alink="#0f0e17" vlink="#ff6e6c">
 
-  <header align="center" style="font-size:30pt;font-weight:bold;">
+  <header align="center">
     iPad Air
   </header>
-
-  <hr />
 
   <div>
     <p class="img-container">
@@ -57,7 +66,7 @@
     </p>
   </div>
 
-  <div align="center" style="font-size:45pt;font-weight:bold;">
+  <div align="center" class="harlow">
     Power isn’t just for the pros.
   </div>
 
@@ -276,10 +285,16 @@
   <br />
   <br />
 
-  <hr />
+  <nav>
+    <ul style="list-style-type:none;">
+      <li>
+        <a href="iPhone 11 Pro.html">iPhone 11 Pro</a>
+      </li>
+    </ul>
+  </nav>
 
   <p align="center">
-    <a href="index.html">
+    <a href="index.html" style="font-size:20pt">
       HOME
     </a>
   </p>
