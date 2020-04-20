@@ -3,11 +3,26 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible">
   <title>iPad Pro</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="script.js"></script>
+
   <style>
+    body {
+      font-family: Roboto;
+      font-size: 22.5pt;
+    }
+
     .img-container {
       text-align: center;
       margin: auto;
+    }
+
+    span {
+      color: #ff6e6c;
     }
 
     header {
@@ -16,6 +31,7 @@
       padding: 30px;
       font-size: 30pt;
       font-weight: bold;
+      text-align: left;
     }
 
     .ex1 {
@@ -64,36 +80,70 @@
       src: url("Fonts/Roboto Round Regular.ttf");
     }
 
-    body {
-      font-family: Roboto;
-    }
-
     .harlow {
       font-family: Roboto;
       font-weight: bold;
+    }
+
+    h5 {
+      width: 85%;
+      margin: auto;
+      color: #fffffe;
+      font-size: 20pt;
     }
   </style>
 </head>
 
 <body bgcolor="#f5f5f7" link="black" alink="#0f0e17" vlink="#ff6e6c">
 
-  <header align="left" class="harlow">
+  <header align="left">
     iPad Pro
   </header>
+  &nbsp;
+  <h5 style="color:#0f0e17">
+    <a href="iPad.html"><span>iPad</span></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="iPad Air.html"><span>iPad Air</span></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    iPad Pro
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    |
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Apple Pencil.html"><span>Apple Pencil</span></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Smart Keyboard.html"><span>Smart Keyboard</span></a>
+  </h5>
+
+  <br>
+  <br>
 
   <div>
     <p class="img-container">
-      <img src="ProjectFile/iPad Pro2.jpg" height="900px" width="1700px">
+      <img src="ProjectFile/ipadpro1.jpg" width="80%;">
     </p>
   </div>
+
+  <br>
 
   <div align="center" style="font-size:45pt;font-weight:bold;">
     Your next computer<br />
     is not a computer.
   </div>
 
-  <br />
-  <br />
+  <div style="text-align:center;">
+    <button data-modal-target="#modal" style="font-size: 30pt;border: none;display: inline-block;text-decoration: none;color: #ff6e6c;padding: 20px 30px;background-color: #f5f5f7;cursor: pointer;"><u>Intro</u></button>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title">Introduction Video</div>
+    </div>
+    <div class="modal-body">
+        <iframe width="1200px" height="600px" src="https://www.youtube.com/embed/09_QxCcBEyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
   <br />
 
   <div>
@@ -112,8 +162,6 @@
     <img rc="" />
   </div>
 
-  <br />
-  <br />
   <br />
 
   <div>
@@ -156,6 +204,14 @@
     <p class="ex3">
       The front-facing TrueDepth camera enables Face ID on the iPad Pro and it also means you can chat with friends using FaceTime, take Portrait selfies or liven up your Messages conversations by turning yourself into an Animoji.
     </p>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="img-container">
+    <img src="ProjectFile/iPad Pro Camera.jpeg" width="80%" height="75%">
   </div>
 
   <br />
@@ -203,7 +259,7 @@
 
   <div>
     <p class='ex1'>
-      <a href="">Magic Keyboard</a><img src="" />
+      <a href=""><span>Magic Keyboard</span></a>
     </p>
     <br />
     <p class="ex3">
@@ -247,7 +303,7 @@
 
   <div>
     <p class='ex1'>
-      <a href="">Apple Pencil</a>
+      <a href=""><span>Apple Pencil</span></a>
     </p>
     <br />
     <p class="ex4">
@@ -329,38 +385,38 @@
           <tr style="text-align:left;">
             <td>
               <ul style="list-style-type:none;">
-                <li><a href="index.html">Back To Index</a></li>
+                <li><a href="index.html"><span>Back To Index</span></a></li>
               </ul>
             </td>
             <td>
               <ul style="list-style-type:none;">
                 <li><b>iPhone</b></li>
-                <li><a href="iPhone XR.html">iPhone XR</a></li>
-                <li><a href="iPhone 11.html" target="_blank">iPhone 11</a></li>
-                <li><a href="iPhone 11 Pro.html">iPhone 11 Pro</a></li>
+                <li><a href="iPhone XR.html"><span>iPhone XR</span></a></li>
+                <li><a href="iPhone 11.html"><span>iPhone 11</span></a></li>
+                <li><a href="iPhone 11 Pro.html"><span>iPhone 11 Pro</span></a></li>
               </ul>
             </td>
             <td>
               <ul style="list-style-type:none;">
                 <li><b>iPad</b></li>
-                <li><a href="iPad.html">iPad</a></li>
-                <li><a href="iPad Air.html">iPad Air</a></li>
-                <li><a href="iPad Pro.html">iPad Pro</a></li>
+                <li><a href="iPad.html"><span>iPad</span></a></li>
+                <li><a href="iPad Air.html"><span>iPad Air</span></a></li>
+                <li>iPad Pro</li>
               </ul>
             </td>
             <td>
               <ul style="list-style-type:none;">
                 <li><b>iPad Accessories</b></li>
-                <li><a href="Apple Pencil.html">Apple Pencil</a></li>
-                <li><a href="Smart Keyboard.html">Smart Keyboard</a></li>
+                <li><a href="Apple Pencil.html"><span>Apple Pencil</span></a></li>
+                <li><a href="Smart Keyboard.html"><span>Smart Keyboard</span></a></li>
               </ul>
             </td>
             <td>
               <ul style="list-style-type:none;">
                 <li><b>Macbook</b></li>
-                <li><a href="MacBook Air.html">MacBook Air</a></li>
-                <li><a href="MacBook Pro 13'.html">MacBook Pro 13"</a></li>
-                <li><a href="MacBook Pro 16'.html">MacBook Pro 16"</a></li>
+                <li><a href="MacBook Air.html"><span>MacBook Air</span></a></li>
+                <li><a href="MacBook Pro 13'.html"><span>MacBook Pro 13"</span></a></li>
+                <li><a href="MacBook Pro 16'.html"><span>MacBook Pro 16"</span></a></li>
               </ul>
             </td>
           </tr>
@@ -368,7 +424,7 @@
     </div>
 
     <div>
-        Quick Navigation
+      Quick Navigation
     </div>
 
 </body>
