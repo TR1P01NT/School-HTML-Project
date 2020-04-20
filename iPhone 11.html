@@ -4,6 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>iPhone 11</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="script.js"></script>
+
   <style>
     .img-container {
       text-align: center;
@@ -113,7 +118,7 @@
     iPhone 11
   </header>
   &nbsp;
-  <h5 style="color:#cabae2">
+  <h5 style="color:black">
     <a href="iPhone XR.html">iPhone XR</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     iPhone 11
@@ -123,7 +128,7 @@
 
   <div>
     <p class="img-container">
-      <img src="ProjectFile/iPhone 11 color.webp" />
+      <img src="ProjectFile/iPhone 11.png" />
     </p>
   </div>
 
@@ -132,8 +137,20 @@
     of everything.
   </div>
 
-  <br />
-  <br />
+  <div style="text-align:center;">
+    <button data-modal-target="#modal" style="font-size: 30pt;border: none;display: inline-block;text-decoration: none;color: #ff6e6c;padding: 20px 30px;background-color: #fafafa;cursor: pointer;"><u>Intro</u></button>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title">Introduction Video</div>
+    </div>
+    <div class="modal-body">
+        <iframe width="1200px" height="600px" src="https://www.youtube.com/embed/H4p6njjPV_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
   <br />
 
   <div>

@@ -4,6 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>iPhone XR</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="script.js"></script>
+
   <style>
     .img-container {
       text-align: center;
@@ -128,6 +133,20 @@
     Brilliant. In every way.
   </div>
 
+  <div style="text-align:center;">
+    <button data-modal-target="#modal" style="font-size: 30pt;border: none;display: inline-block;text-decoration: none;color: #ff6e6c;padding: 20px 30px;background-color: #0f0e17;cursor: pointer;"><u>Intro</u></button>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title">Introduction Video</div>
+    </div>
+    <div class="modal-body">
+        <iframe width="1200px" height="600px" src="https://www.youtube.com/embed/etGnGM6if6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
   <br />
 
   <div class="ex3">
@@ -218,12 +237,10 @@
         <th style="width:30%;">
           <br>&nbsp;
           12MP rear camera
-          <br>&nbsp;
         </th>
         <th style="width:30%;">
           <br>&nbsp;
           TrueDepth camera
-          <br>&nbsp;
         </th>
       </tr>
       <tr>
