@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>iPhone - Face ID</title>
+  <title>iPhone SE</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="script.js"></script>
+
   <style>
     header {
       width: 85%;
@@ -11,6 +16,64 @@
       padding: 30px;
       font-size: 30pt;
       font-weight: bold;
+    }
+
+    .img-container {
+      text-align: center;
+    }
+
+    .ex1 {
+      text-align: left;
+      font-size: 35pt;
+      font-weight: bold;
+      background-color: #111111;
+      width: 80%;
+      margin: auto;
+    }
+
+    .ex2 {
+      width: 75%;
+      text-align: left;
+      margin: auto;
+    }
+
+    .ex3 {
+      width: 60%;
+      text-align: left;
+      margin: auto;
+    }
+
+    .ex4 {
+      width: 45%;
+      margin: auto;
+      text-align: left;
+    }
+
+    .ex5 {
+      width: 70%;
+      text-align: left;
+      margin: auto;
+    }
+
+    .ex6 {
+      width: 60%;
+      text-align: left;
+      margin: auto;
+      font-size: 23.5pt;
+      font-weight: bold;
+    }
+
+    .ex7 {
+      width: 60%;
+      text-align: left;
+      margin: auto;
+    }
+
+    header {
+      padding: 30px;
+      font-size: 30pt;
+      font-weight: bold;
+      color: #fffffe;
     }
 
     @font-face {
@@ -27,111 +90,95 @@
     .harlow {
       font-family: Roboto;
       font-weight: bold;
-      font-size: 45pt;
+      font-size: 50pt;
       color: #fffffe;
-    }
-
-    .ex1 {
-      width: 40%;
-      margin: auto;
-      text-align: left;
-      font-size: 45pt;
     }
 
     h5 {
       width: 85%;
       margin: auto;
       color: #fffffe;
-    }
-
-    .img-container {
-      text-align: center;
+      font-size: 20pt;
     }
 
     table {
-      border-spacing: 10px;
+      margin: auto;
+      width: 80%;
+      text-align: center;
     }
   </style>
 </head>
 
 <body bgcolor="#0f0e17" link="white" alink="#0f0e17" vlink="#ff6e6c">
 
-  <header align="left" style="color:#fffffe">
-    Face ID - iPhone XR
+  <header align="left">
+    iPhone SE
   </header>
   &nbsp;
   <h5 style="color:#fffffe">
+    iPhone SE
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="iPhone XR.html">iPhone XR</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="iPhone XR Display.html">Display</a>
+    <a href="iPhone 11.html">iPhone 11</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Face ID
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="iPhone XR A12 Bionic.html">A12 Bionic</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="iPhone XR Cameras.html">Cameras</a>
+    <a href="iPhone 11 Pro.html">iPhone 11 Pro</a>
   </h5>
 
-
-  <div class="ex1">
-    <p><b>Face ID</b><br>
-      Your face is your password.
+  <div>
+    <p class="img-container">
+      <img src="ProjectFile/iphone se.jpeg" width="85%">
     </p>
   </div>
 
-  <div>
-    <p style="width:80%;margin:auto;text-align:left;"><b>Security made simple.</b><br> Face ID reinvented the way we unlock and log in to apps, accounts and more. Some of our most sophisticated technologies — the TrueDepth camera system, the Secure
-      Enclave and the Neural Engine — make it the most secure facial authentication ever in a smartphone. And even faster and easier to use.
+  <div align="center" class="harlow">
+    Lots to love.<br>
+    Less to spend.
   </div>
 
-  <br>
-  <br>
-
-  <div>
-    <table style="width:70%;margin:auto;">
-      <tr>
-        <td style="text-align:left;width:35%;">
-          <b>Adaptive recognition.</b><br>
-          Face ID uses advanced machine learning to recognise changes in your appearance. Wear a hat. Put on glasses. It even works with many types of sunglasses.
-        </td>
-        <td style="text-align:left;width:35%;">
-          <b>Do more with a glance.</b><br>
-          Face ID does so much more than unlock your iPhone. So you can forget about typing user names and passwords. Now all it takes is a look.
-        </td>
-      </tr>
-    </table>
-    <br>
-    <table style="width:70%;margin:auto;text-align:left;">
-      <tr>
-        <td style="width:35%;">
-          <b>Unlock in an instant.</b><br> The advanced Secure Enclave and new algorithms make Face ID even faster. So you’ll love it even more.
-        </td>
-        <td style="width:35%;">
-          <b>Log in to your apps and accounts.</b><br> Face ID works with the apps you already use — from banking and health apps to locked notes and private documents.
-        </td>
-      </tr>
-    </table>
+  <div style="text-align:center;">
+    <button data-modal-target="#modal" style="font-size: 30pt;border: none;display: inline-block;text-decoration: none;color: #ff6e6c;padding: 20px 30px;background-color: #0f0e17;cursor: pointer;"><u>Intro</u></button>
   </div>
 
-  <br>
-  <br>
-
-  <div class="img-container">
-    <img src="ProjectFile/face-id.jpg">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title">Introduction Video</div>
+    </div>
+    <div class="modal-body">
+      <iframe width="1200px" height="600px" src="https://www.youtube.com/embed/SQIbeAk-bFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
+  <div id="overlay"></div>
+
+  <table style="font-size:20pt;font-weight:bold">
+    <tr>
+      <td>
+        Durable glass and<br>
+        aluminium design
+      </td>
+      <td>
+        Brilliant 4.7”<br>
+        Retina HD display
+      </td>
+    </tr>
+  </table>
 
   <br>
   <br>
 
-  <div>
-    <p style="width:80%;margin:auto;text-align:left;">
-      <b>The technology behind simplicity.</b><br> The innovative technologies in the TrueDepth camera system work together in real time to recognise you in an instant.
-    </p>
-  </div>
+  <h1 style="text-align:center;">
+    Under Construction<br>
+    More coming soon
+  </h1>
 
-  <br>
-  <br>
-  <br>
+
+
+
+
+
+
+
+
 
   <hr style="width:80%">
 
@@ -147,7 +194,7 @@
           <td>
             <ul style="list-style-type:none;">
               <li><b>iPhone</b></li>
-              <li><a href="iPhone SE.html">iPhone SE</a></li>
+              <li>iPhone SE</li>
               <li><a href="iPhone XR.html">iPhone XR</a></li>
               <li><a href="iPhone 11.html">iPhone 11</a></li>
               <li><a href="iPhone 11 Pro.html">iPhone 11 Pro</a></li>
