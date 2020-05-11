@@ -1,3 +1,3 @@
 # ClassProject
-  iPhone SE Unfinished
+  Project Finished
   
